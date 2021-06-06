@@ -1,7 +1,7 @@
 <template>
   <v-card outlined color="#385F73">
     <v-container fluid>
-      <v-row align="right">
+      <v-row>
         <v-col cols="6">
           <v-text-field
             class="city-input"
