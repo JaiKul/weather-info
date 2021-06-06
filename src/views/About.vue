@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     <v-card>
+      <v-card-title>About the site</v-card-title>
       <v-card-text>
         <p>
           The developer created this site as a side project while learning
@@ -63,11 +64,3 @@
     </v-list>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {};
-  },
-};
-</script>

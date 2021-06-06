@@ -36,7 +36,6 @@
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
-    <!-- <v-card dark color="#385F73" elevation="2"> -->
   </div>
 </template>
 

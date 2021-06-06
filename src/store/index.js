@@ -35,15 +35,11 @@ export default new Vuex.Store({
       axios.get(url).then((response) => {
         context.commit("setLoadingStatus", false);
         if (response.status === 200) {
-          console.log(response);
           context.commit("setCityData", response.data);
+        } else {
+          context.commit("setCityData", {});
         }
       });
-    },
-  },
-  getters: {
-    cityWeatherDetails(state) {
-      return state.cityData; //ToDo: filter out unnecessary details
     },
   },
 });
