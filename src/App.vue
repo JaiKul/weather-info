@@ -20,7 +20,7 @@
       <v-app-bar-nav-icon @click="showDrawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title>Weather App</v-toolbar-title>
       <v-spacer></v-spacer>
-      <user-input-form></user-input-form>
+      <user-input-form class="d-none d-sm-none d-md-flex"></user-input-form>
     </v-app-bar>
     <!-- Navigation drawer -->
     <v-navigation-drawer v-model="showDrawer" app bottom temporary>
@@ -44,8 +44,8 @@
       </v-list>
     </v-navigation-drawer>
     <!-- Main page content -->
-    <v-main class="main-content">
-      <v-container id="scrolling-techniques" fluid>
+    <v-main id="scrolling-techniques" class="main-content">
+      <v-container fluid>
         <router-view />
       </v-container>
     </v-main>

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <user-input-form class="d-flex d-md-none"></user-input-form>
     <v-container>
       <v-row v-if="details.main">
         <v-col lg="4" md="6" sm="12">
@@ -145,8 +146,14 @@
 </template>
 
 <script>
+// @ is an alias to /src
+import UserInputForm from "@/components/UserInputForm.vue";
+
 export default {
   name: "WeatherDetails",
+  components: {
+    UserInputForm,
+  },
   data() {
     return {
       showAlert: false,

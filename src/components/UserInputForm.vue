@@ -1,5 +1,5 @@
 <template>
-  <v-card outlined color="#385F73">
+  <v-card outlined color="#385F73" dark>
     <v-container fluid>
       <v-row>
         <v-col cols="6">
